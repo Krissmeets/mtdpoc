@@ -1,0 +1,16 @@
+<aura:component access="global" controller="mtdcontroller" implements="force:appHostable">
+
+<aura:attribute name="msg" type="String" />
+
+<aura:handler name="selectMTDObject" event="c:evtSelectMTD" action="{!c.jsObjectSelected}"/>
+
+<div>
+{!v.msg}
+</div>
+
+<div>
+	<c:objectselector/>
+</div>
+
+
+</aura:component>	
